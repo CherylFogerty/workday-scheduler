@@ -31,5 +31,19 @@ function colorupdater (){
 colorupdater()
 
 
-localStorage.setItem("time-input", "save");
-const save = localStorage.getItem("time-input")
+{
+    function createItem(){
+   localStorage.setItem("save" , "time-input");
+    }
+      function readValue(){
+var x = localStorage.getItem("time-input");
+    document.getElementsByClassName("time-input").innerHTML = x;
+    }
+    
+}
+{
+     document.getElementsByClassName("myBtn").addEventListener("click" , myFunction);
+     function myFunction(){
+         alert ("Saved!")
+     }
+}
